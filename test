@@ -1,0 +1,118 @@
+#!/bin/bash
+
+# Test `first`
+echo "Testing 'first':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./first) == "one" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `second`
+echo "Testing 'second':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./second) == "two" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `third`
+echo "Testing 'third':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./third) == "three" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `fifth`
+echo "Testing 'fifth':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./fifth) == "five" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `sixth`
+echo "Testing 'sixth':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./sixth) == "six" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `seventh`
+echo "Testing 'seventh':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./seventh) == "seven" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `eighth`
+echo "Testing 'eighth':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./eighth) == "eight" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `ninth`
+echo "Testing 'ninth':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./ninth) == "nine" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `tenth`
+echo "Testing 'tenth':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./tenth) == "ten" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last`
+echo "Testing 'last':"
+if [[ $(echo "one two three four" | ./last) == "four" ]]; then
+        echo -e "\e[32m\u2713\e[0m Test passed"
+else
+        echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last-1`
+echo "Testing 'last-1':"
+if [[ $(echo "one two three four" | ./last-1) == "three" ]]; then
+        echo -e "\e[32m\u2713\e[0m Test passed"
+else
+        echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last-2`
+echo "Testing 'last-2':"
+if [[ $(echo "one two three four" | ./last-2) == "two" ]]; then
+        echo -e "\e[32m\u2713\e[0m Test passed"
+else
+        echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last-3`
+echo "Testing 'last-3':"
+if [[ $(echo "one two three four" | ./last-3) == "one" ]]; then
+        echo -e "\e[32m\u2713\e[0m Test passed"
+else
+        echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
