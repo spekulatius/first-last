@@ -1,5 +1,7 @@
 # first-last
 
+This set of bash scripts is aimed at main complex bash scripts using pipes more readable.
+
 ## `first`
 
 ```bash
