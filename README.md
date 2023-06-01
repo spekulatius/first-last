@@ -1,6 +1,6 @@
 # first-last
 
-This set of bash scripts is aimed at main complex bash scripts using pipes more readable.
+This collection of bash scripts is designed to enhance readability, particularly in complex bash scripts that utilize pipes. The scripts provide convenient functionality to extract specific elements from piped input, making it easier to work with and manipulate data in bash pipelines.
 
 ## `first`
 
