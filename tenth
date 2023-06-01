@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -r input
+echo "$input" | awk '{print $10}'
