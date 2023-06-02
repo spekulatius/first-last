@@ -1,0 +1,3 @@
+#!/bin/bash
+
+awk '{last_4 = $(NF-4)} END {print last_4}'

@@ -102,4 +102,10 @@ Testing 'last-2':
 
 Testing 'last-3':
 ✓ Test passed
+
+Testing 'last-4':
+✓ Test passed
+
+Testing 'last-5':
+✓ Test passed
 ```

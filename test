@@ -110,9 +110,27 @@ echo
 
 # Test `last-3`
 echo "Testing 'last-3':"
-if [[ $(echo "one two three four" | ./last-3) == "one" ]]; then
-        echo -e "\e[32m\u2713\e[0m Test passed"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./last-3) == "seven" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
 else
-        echo -e "\e[31m\u2717\e[0m Test failed"
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last-4`
+echo "Testing 'last-4':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./last-4) == "six" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
+fi
+echo
+
+# Test `last-5`
+echo "Testing 'last-5':"
+if [[ $(echo "one two three four five six seven eight nine ten" | ./last-5) == "five" ]]; then
+    echo -e "\e[32m\u2713\e[0m Test passed"
+else
+    echo -e "\e[31m\u2717\e[0m Test failed"
 fi
 echo
