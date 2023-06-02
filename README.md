@@ -29,28 +29,42 @@ Additionally, the `last` utility retrieves the last element from the input. To a
 ### `last`
 
 ```bash
-$ echo "one two three four" | last
-four
+$ echo "one two three four five six" | last
+six
 ```
 
 ### `last-1`
 
 ```bash
-$ echo "one two three four" | last-1
-three
+$ echo "one two three four five six" | last-1
+five
 ```
 
 ### `last-2`
 
 ```bash
-$ echo "one two three four" | last-2
-two
+$ echo "one two three four five six" | last-2
+four
 ```
 
 ### `last-3`
 
 ```bash
-$ echo "one two three four" | last-3
+$ echo "one two three four five six" | last-3
+three
+```
+
+### `last-4`
+
+```bash
+$ echo "one two three four five six" | last-4
+two
+```
+
+### `last-5`
+
+```bash
+$ echo "one two three four five six" | last-5
 one
 ```
 
