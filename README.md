@@ -1,71 +1,30 @@
 # first-last
 
-This collection of bash scripts is designed to enhance readability, particularly in complex bash scripts that utilize pipes. The scripts provide convenient functionality to extract specific elements from piped input, making it easier to work with and manipulate data.
+This collection of bash scripts aims to improve readability in complex bash scripts that involve piped data processing. It provides a set of convenient utilities to extract specific elements from piped input, simplifying data manipulation.
 
 ## Utils
 
-### `first`
+### `first` / `1`, `second` / `2`, `third` / `3`, ...
+
+These utilities retrieve the corresponding element from the piped input:
 
 ```bash
-$ echo "one two three four five six seven eight nine ten" | first
+echo "one two three four five six seven eight nine ten" | first
 one
 ```
 
-### `second`
+Alternatively, you can use numeric equivalents like `1`, `2`, `3`, and so on:
 
 ```bash
-$ echo "one two three four five six seven eight nine ten" | second
-two
+echo "one two three four five six seven eight nine ten" | 1
+one
 ```
 
-### `third`
+You can use select any element from 1 to 10.
 
-```bash
-$ echo "one two three four five six seven eight nine ten" | third
-three
-```
+### `last`-utils
 
-### `fifth`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | fifth
-five
-```
-
-### `sixth`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | sixth
-six
-```
-
-### `seventh`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | seventh
-seven
-```
-
-### `eighth`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | eighth
-eight
-```
-
-### `ninth`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | ninth
-nine
-```
-
-### `tenth`
-
-```bash
-$ echo "one two three four five six seven eight nine ten" | tenth
-ten
-```
+Additionally, the `last` utility retrieves the last element from the input. To access the elements in reverse order, you can use `last-1`, `last-2`, `last-3`, and so on.
 
 ### `last`
 
@@ -101,7 +60,7 @@ Copy the scripts somewhere and `chmod +x`
 
 ## Tests
 
-You can run the test suite as needed:
+You can run the provided test suite to validate the functionality of each utility. The test results will be displayed, indicating whether each test passed or failed, represented by a green tick (✓) for passed tests.
 
 ```bash
 $ ./test
